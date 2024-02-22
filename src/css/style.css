@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+}
+
+.form {
+    height: 550px;
+    width: 400px;
+    background-color: antiquewhite;
+}

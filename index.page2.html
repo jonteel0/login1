@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign Up</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    animation: moveBackground 20s linear infinite;
+    animation: forwards;
+    
+}
+
+form{
+    height: 580px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 40px #ffffff;
+    padding: 50px 35px;
+    background-image: linear-gradient(125deg,#000000c5,#000000c5);
+    
+    
+}
+
+form *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    
+
+}
+
+form h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500px;
+    line-height: 40px;
+    color: #ffffff;
+    
+
+}
+
+
+
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 30px;
+    border-color: #ffffff;
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    transition: 0.5s;
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    
+    
+
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    font-weight: 600;
+    padding: 15px 0px;
+    font-size: 18px;
+    color: #000000;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s;
+    
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.social div{
+    padding: 5px 10px 10px 5px;
+    color: white;
+    text-align: center;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.social .facebook{
+    margin-left: 30px;
+}
+
+.social i{
+    margin-right: 4px;
+}
+
+button:hover {
+    background-color: #676767;
+    transform: translateY(-2px);
+    cursor: pointer;
+    
+}
+
+
+    
+
+@media (max-width:768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: auto;
+    }
+
+    -Signup-right {
+        display: none;
+    } 
+}
+
+@keyframes rotate{
+    100%{
+        background-position: 15% 50% 75%;
+    }
+}
+
+h4{
+
+    text-align: center;
+    margin-top: 25px;
+    transition-duration: 0.3s;
+    
+    
+    
+}
+
+
+
+
+    </style>
+</head>
+<body style="background-image: url(background.svg);">
+    <form>
+        <h3>Sign Up</h3>
+
+        <input type="text" name="" id="" placeholder="Username">
+
+        <input type="password" name="" id="" placeholder="Password">
+
+        <input type="password" name="" id="" placeholder="Repeat Password">
+
+        <button>Sign Up</button>
+
+        <div class="social">
+            <div class="Facebook"><i class="fa-brands fa-facebook-f" style="color:rgb(3, 91, 255);"></i> Facebook</div>
+            <div class="Google"><i class="fa-brands fa-google"></i> Google</div>
+        </div>
+        <div class="signup">
+            <h4 style="color: #ffffff;">Already have an account?<span><a href="index.html" style="color: rgb(3, 91, 255);"> Log In</a></span></h4>
+        </div>
+    </form>
+</body>
+</html>
